@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    background-image: url('984325866-20e46b53e463be59c21950f5a3e6ce7dcfe7758d78839f6d5964d2c15372a914-d_640.avif');
+    background-position: center;
+    background-size: cover;
+}
+
+#main{
+    width: 100%;
+    min-height: 100vh;
+}
+
+#top{
+    width: 100%;
+    min-height: 60vh;
+   background-image: url(984325866-20e46b53e463be59c21950f5a3e6ce7dcfe7758d78839f6d5964d2c15372a914-d_640.avif);
+   background-position:20% 30%;
+   background-size: cover;
+}
+
+#overlay{
+    position: relative;
+    width: 100%;
+    min-height: inherit;
+    background-color: rgba(0, 0, 0, 0.493);
+}
+#text{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    bottom: 20%;
+    padding: 0 10vw;
+    color: white;
+}
+#text h1{
+    font-weight: 500;
+    font-size: 6vw;
+}
+
+#textright{
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    width: 60%;
+}
+
+#textright p{
+    font-size: 12px;
+    width: 40%;
+}
+
+#textright i{
+    color: aliceblue;
+}
+
+#icons:hover{
+    transform: scale(1.08);
+}
+#facebook:hover{
+    color: aquamarine;
+}
+
+#twitter:hover{
+    color: aquamarine;
+}
+
+#instagram:hover{
+    color: aquamarine;
+}
+
+#bottom{
+    display: flex;
+    width: 100%;
+    min-height: 40vh;
+}
+
+#bone{
+    width: 25%;
+    min-height:inherit;
+    background-color: bisque;
+    padding: 30px;
+    background-size: 100%;
+    
+    background-repeat: no-repeat;
+    background-attachment: 100%;
+}
+
+#bone p{
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+#btwo{
+    width: 25%;
+    min-height: inherit;
+    background-image: url('HD-wallpaper-beauty-nature-beauty-nature-night-sunset-tree.jpg');
+    background-position: center;
+    background-size: cover;
+}
+#bthree{
+    width: 20%;
+    min-height: inherit;
+}
+
+#bthreetop{
+    width: 100%;
+    min-height: 20vh;
+    background-color: rgb(255, 0, 0);
+    color: white;
+    padding: 30px;
+}
+
+#bthreetop p{
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+#bthreebottom{
+    width: 100%;
+    min-height: 20vh;
+    background-image:url(download.jpeg);
+    background-position:center;
+    background-size:cover;
+}
+
+#bfour{
+    width: 30%;
+    min-height:inherit;
+    padding: 30px;
+    background-color: rgba(200, 44, 44, 0.911);
+    color: white;
+}
+
+ 
+.notf{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.notf:hover{
+    transform: scale(1.05);
+}
+
+.notf #photo{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-image: url(IMG_20230304_213024_804.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+.notf #photo2{
+    padding-top:10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-image: url(download.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+.notf #photo3{
+    padding-top:10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-image: url(download.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+.notf p{
+    width: 80%;
+    padding-left: 170%;
+    font-size: 12px;
+}
+
+#notification:hover{
+    color: aquamarine;
+}
+
+
+/* Responcive part.....*/
+@media(max-width: 500px){
+    #text h1{
+        flex-direction: column;
+        font-size: 10vw;
+    }
+    #botom{
+        min-height: 20vh;
+    }
+    #ovarlay #text{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #overlay #text #textright{
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    #overlay #text #textright p{
+        width: initial;
+        margin-top: 20px;
+    }
+    #overlay #text #textright #icons{
+        margin-top: 30px;
+    }
+
+    #bottom{
+        flex-direction: column;
+    }
+    #bone{
+        width: 100%;
+        height: auto;
+    }
+    #btwo{
+        width: 100%;
+        height: auto;
+    }
+    #bthree{
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+    #bfour{
+        width: 100%;
+        height: auto;
+    }
+    
+}
